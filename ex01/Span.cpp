@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 14:38:37 by emohamed          #+#    #+#             */
-/*   Updated: 2023/12/21 16:23:34 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/12/21 17:12:30 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void Span::print_vec(){
 
     for(int i = 0; i < N; i++)
     {
-        std::cout << vec.at(i) << " ";
+        std::cout << vec.at(i) << std::endl;
     }
 }
 
@@ -42,4 +42,19 @@ void Span::add(int b, int e){
     {
         addNumber(i);
     }
+}
+
+int Span::longestSpan(){
+    
+    int max = *std::max_element(vec.begin(), vec.end());
+    int min = *std::min_element(vec.begin(), vec.end());
+
+    return (max - min);
+}
+int Span::shortestSpan(){
+    
+    int max = *std::max_element(vec.begin(), vec.end());
+    int min = *std::min_element(vec.begin(), vec.end());
+
+    return (max - min);
 }

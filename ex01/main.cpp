@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 14:57:43 by emohamed          #+#    #+#             */
-/*   Updated: 2023/12/21 16:23:52 by emohamed         ###   ########.fr       */
+/*   Updated: 2023/12/21 17:04:27 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main()
         sp.addNumber(10);
         sp.add(1, 9);
         sp.print_vec();
+        std::cout << "longest span: " << sp.longestSpan() << std::endl;
         
     }
     catch (std::exception &e)
